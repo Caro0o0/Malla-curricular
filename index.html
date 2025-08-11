@@ -1,1 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malla Curricular</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h1>Malla Curricular de Obstetricia</h1>
+        <p>Haz clic en un ramo para marcarlo como aprobado.</p>
+    </div>
 
+    <div class="container">
+        <div class="semestre" id="semestre-1">
+            <h2>I Semestre</h2>
+            <ul>
+                <li data-ramo="Química General y Orgánica" data-prerequisitos='[]'>Química General y Orgánica</li>
+                <li data-ramo="Anatomía I" data-prerequisitos='[]'>Anatomía I</li>
+                <li data-ramo="Biología celular y Genética" data-prerequisitos='[]'>Biología celular y Genética</li>
+                <li data-ramo="Matemática" data-prerequisitos='[]'>Matemática</li>
+                <li data-ramo="Introducción a la Profesión" data-prerequisitos='[]'>Introducción a la Profesión</li>
+                <li data-ramo="Psicología del Desarrollo" data-prerequisitos='[]'>Psicología del Desarrollo</li>
+                <li data-ramo="Curso Transversal Institucional I" data-prerequisitos='[]'>Curso Transversal Institucional I</li>
+            </ul>
+        </div>
+        
+        <div class="semestre" id="semestre-2">
+            <h2>II Semestre</h2>
+            <ul>
+                <li data-ramo="Bioquímica" data-prerequisitos='["Química General y Orgánica"]'>Bioquímica</li>
+                <li data-ramo="Anatomía II" data-prerequisitos='["Anatomía I"]'>Anatomía II</li>
+                <li data-ramo="Microbiología Parasitología" data-prerequisitos='["Biología celular y Genética"]'>Microbiología Parasitología</li>
+                <li data-ramo="Embriología e Histología" data-prerequisitos='["Biología celular y Genética"]'>Embriología e Histología</li>
+                <li data-ramo="Socioantropología" data-prerequisitos='["Psicología del Desarrollo"]'>Socioantropología</li>
+                <li data-ramo="Fundamentos Enfermería Básica Obstetricia" data-prerequisitos='["Introducción a la Profesión"]'>Fundamentos Enfermería Básica Obstetricia</li>
+                <li data-ramo="Inglés I" data-prerequisitos='[]'>Inglés I</li>
+            </ul>
+        </div>
+        
+        <div class="semestre" id="semestre-3">
+            <h2>III Semestre</h2>
+            <ul>
+                <li data-ramo="Fisiología" data-prerequisitos='["Bioquímica"]'>Fisiología</li>
+                <li data-ramo="Bioestadística" data-prerequisitos='["Matemática"]'>Bioestadística</li>
+                <li data-ramo="Salud Pública" data-prerequisitos='["Introducción a la Profesión"]'>Salud Pública</li>
+                <li data-ramo="Fundamentos Médico Quirúrgico Obstetricia" data-prerequisitos='["Fundamentos Enfermería Básica Obstetricia"]'>Fundamentos Médico Quirúrgico Obstetricia</li>
+                <li data-ramo="Promoción de la Salud e Interculturalidad" data-prerequisitos='["Socioantropología"]'>Promoción de la Salud e Interculturalidad</li>
+                <li data-ramo="Salud familiar y Comunitaria" data-prerequisitos='[]'>Salud familiar y Comunitaria</li>
+                <li data-ramo="Electivo 1" data-prerequisitos='[]'>Electivo</li>
+            </ul>
+        </div>
+        
+        <div class="semestre" id="semestre-4">
+            <h2>IV Semestre</h2>
+            <ul>
+                <li data-ramo="Farmacología General" data-prerequisitos='["Fisiología"]'>Farmacología General</li>
+                <li data-ramo="Fisiopatología" data-prerequisitos='["Fisiología"]'>Fisiopatología</li>
+                <li data-ramo="Gestión y Administración en Salud" data-prerequisitos='["Salud Pública"]'>Gestión y Administración en Salud</li>
+                <li data-ramo="Salud Sexual y Género" data-prerequisitos='["Promoción de la Salud e Interculturalidad"]'>Salud Sexual y Género</li>
+                <li data-ramo="Paternidad Responsable y Planificación Familiar" data-prerequisitos='["Fundamentos Médico Quirúrgico Obstetricia"]'>Paternidad Responsable y Planificación Familiar</li>
+                <li data-ramo="Ética - Bioética y Legislación" data-prerequisitos='["Salud Pública"]'>Ética - Bioética y Legislación</li>
+                <li data-ramo="Inglés II" data-prerequisitos='["Inglés I"]'>Inglés II</li>
+            </ul>
+        </div>
+        
+        <div class="semestre" id="semestre-5">
+            <h2>V Semestre</h2>
+            <ul>
+                <li data-ramo="Metodología de la Investigación I" data-prerequisitos='["Salud Pública", "Ética - Bioética y Legislación"]'>Metodología de la Investigación I</li>
+                <li data-ramo="Obstetricia I" data-prerequisitos='["Farmacología General", "Fisiopatología"]'>Obstetricia I</li>
+                <li data-ramo="Ginecología I" data-prerequisitos='["Farmacología General", "Fisiopatología"]'>Ginecología I</li>
+                <li data-ramo="Neonatología I" data-prerequisitos='["Farmacología General", "Fisiopatología"]'>Neonatología I</li>
+                <li data-ramo="Salud Familiar y Comunitaria Obstetricia y Ginecología" data-prerequisitos='["Fisiopatología", "Paternidad Responsable y Planificación Familiar"]'>Salud Familiar y Comunitaria Obstetricia y Ginecología</li>
+                <li data-ramo="Farmacología Aplicada a la Obstetricia y Ginecología" data-prerequisitos='["Farmacología General"]'>Farmacología Aplicada a la Obstetricia y Ginecología</li>
+                <li data-ramo="Curso Transversal Institucional II" data-prerequisitos='[]'>Curso Transversal Institucional II</li>
+            </ul>
+        </div>
+        
+        <div class="semestre" id="semestre-6">
+            <h2>VI Semestre</h2>
+            <ul>
+                <li data-ramo="Gestión y Liderazgo en Salud" data-prerequisitos='["Gestión y Administración en Salud"]'>Gestión y Liderazgo en Salud</li>
+                <li data-ramo="Metodología de la Investigación II" data-prerequisitos='["Metodología de la Investigación I"]'>Metodología de la Investigación II</li>
+                <li data-ramo="Práctica Clínica Obstetricia I" data-prerequisitos='["Obstetricia I", "Farmacología Aplicada a la Obstetricia y Ginecología"]'>Práctica Clínica Obstetricia I</li>
+                <li data-ramo="Práctica Ginecológica I" data-prerequisitos='["Ginecología I", "Farmacología Aplicada a la Obstetricia y Ginecología"]'>Práctica Ginecológica I</li>
+                <li data-ramo="SIM Neatología I" data-prerequisitos='["Neonatología I", "Farmacología Aplicada a la Obstetricia y Ginecología"]'>SIM Neatología I</li>
+                <li data-ramo="Salud Familiar y Comunitaria Obstetricia y Ginecología II" data-prerequisitos='["Salud Familiar y Comunitaria Obstetricia y Ginecología"]'>Salud Familiar y Comunitaria Obstetricia y Ginecología II</li>
+                <li data-ramo="Inglés III" data-prerequisitos='["Inglés II"]'>Inglés III</li>
+            </ul>
+        </div>
+        
+        <div class="semestre" id="semestre-7">
+            <h2>VII Semestre</h2>
+            <ul>
+                <li data-ramo="Tecnología e Innovación en Salud Práctica" data-prerequisitos='["Metodología de la Investigación II", "Gestión y Liderazgo en Salud"]'>Tecnología e Innovación en Salud Práctica</li>
+                <li data-ramo="Obstetricia II" data-prerequisitos='["Práctica Clínica Obstetricia I"]'>Obstetricia II</li>
+                <li data-ramo="Ginecología II" data-prerequisitos='["Práctica Ginecológica I"]'>Ginecología II</li>
+                <li data-ramo="Neonatología II" data-prerequisitos='["SIM Neatología I"]'>Neonatología II</li>
+                <li data-ramo="Investigación Disciplinar I" data-prerequisitos='["Metodología de la Investigación II"]'>Investigación Disciplinar I</li>
+                <li data-ramo="Electivo 2" data-prerequisitos='[]'>Electivo</li>
+            </ul>
+        </div>
+        
+        <div class="semestre" id="semestre-8">
+            <h2>VIII Semestre</h2>
+            <ul>
+                <li data-ramo="Clínica Obstetricia II" data-prerequisitos='["Obstetricia II"]'>Clínica Obstetricia II</li>
+                <li data-ramo="Práctica Ginecología II" data-prerequisitos='["Ginecología II"]'>Práctica Ginecología II</li>
+                <li data-ramo="SIM Neonatología II" data-prerequisitos='["Neonatología II"]'>SIM Neonatología II</li>
+                <li data-ramo="Investigación Disciplinar II" data-prerequisitos='["Investigación Disciplinar I"]'>Investigación Disciplinar II</li>
+                <li data-ramo="Gerontología en la Mujer" data-prerequisitos='["Salud Pública", "Salud Familiar y Comunitaria Obstetricia y Ginecología"]'>Gerontología en la Mujer</li>
+                <li data-ramo="Salud Mental en la Mujer" data-prerequisitos='["Salud Pública", "Salud Familiar y Comunitaria Obstetricia y Ginecología"]'>Salud Mental en la Mujer</li>
+            </ul>
+        </div>
+        
+        <div class="semestre semestre-internado" id="semestre-9-10">
+            <h2>IX y X Semestre</h2>
+            <ul>
+                <li data-ramo="Internado Intrahospitalario" data-prerequisitos='[]'>Internado Intrahospitalario</li>
+                <li data-ramo="Internado Extrahospitalario" data-prerequisitos='[]'>Internado Extrahospitalario</li>
+                <li data-ramo="Internado Electivo" data-prerequisitos='[]'>Internado Electivo</li>
+                <li data-ramo="Certificación de Competencias Egreso" data-prerequisitos='[]'>Certificación de Competencias Egreso</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
